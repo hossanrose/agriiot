@@ -19,5 +19,8 @@ IoT stack consists of Node, Gateway and Controller
 * [nRF24L01+](https://www.deviceplus.com/arduino/nrf24l01-rf-module-tutorial/) 
 
 ## Monitoring solutions.
-Monitoring solutions tested out are Graphite, Prometheus and TICK stack
+Monitoring solutions tested out are,
+*[Graphite](https://graphiteapp.org/)
+*[Prometheus](https://prometheus.io/) 
+*[TICK stack](https://www.influxdata.com/time-series-platform/)
 
