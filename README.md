@@ -20,7 +20,7 @@ IoT stack consists of Node, Gateway and Controller
 
 ## Monitoring solutions.
 Monitoring solutions tested out are,
-*[Graphite](https://graphiteapp.org/)
-*[Prometheus](https://prometheus.io/) 
-*[TICK stack](https://www.influxdata.com/time-series-platform/)
+* [Graphite](https://graphiteapp.org/)
+* [Prometheus](https://prometheus.io/) 
+* [TICK stack](https://www.influxdata.com/time-series-platform/)
 
