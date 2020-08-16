@@ -1,0 +1,12 @@
+global:
+  slack_api_url: 'GET_THIS_AS_MENTIONED_IN_README'
+
+route:
+  receiver: 'slack'
+
+receivers:
+  - name: 'slack'
+    slack_configs:
+      - send_resolved: true
+        channel: '#monitoring-iot'
+        username: "Prometheus"

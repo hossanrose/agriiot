@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+
+    prometheus:
+        image: prom/prometheus
+        privileged: true
+        volumes:
+            - ./prometheus.yml:/etc/prometheus/prometheus.yml
+            - ./alertmanager/alert.rules:/alertmanager/alert.rules
+        command:
+            - '--config.file=/etc/prometheus/prometheus.yml'
+        ports:
+            - '9090:9090'
+
+    alertmanager:
+        image: prom/alertmanager
+        privileged: true
+        volumes:
+             - ./alertmanager/alertmanager.yml:/alertmanager.yml
+        command:
+            - '--config.file=/alertmanager.yml'
+        ports:
+            - '9093:9093'
+~                              
