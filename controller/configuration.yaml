@@ -1,0 +1,55 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+# MQTT
+mqtt:
+  broker: localhost
+  client_id: homeassist
+
+# MySensors
+mysensors:
+  gateways:
+    - device: mqtt
+      persistence_file: 'mysensors/mysensorsPer.json'
+      topic_in_prefix: 'mygateway1-out'
+      topic_out_prefix: 'mygateway1-in'
+  optimistic: false
+  persistence: true
+  retain: true
+  version: '2.0'
+
+# Prometheus
+# Example filter to include specified domains and exclude specified entities
+prometheus:
+  filter:
+    include_entities:
+      - sensor.light_sensor_2_0
+      - sensor.temperatureandhumidity_1_0
+      - sensor.temperatureandhumidity_1_1 
+
+# Graphite 
+graphite:
+  host: 'GRAPHITE_HOST_IP'
+
+# InfluxDB
+# DB / USER / PASS should be configured on InfluxDB before setup
+influxdb:
+  host: 'INFLUX_HOST_IP'
+  username: 'hass'
+  password: 'password'
+  include:
+    entities:
+      - sensor.light_sensor_2_0
+      - sensor.temperatureandhumidity_1_0
+      - sensor.temperatureandhumidity_1_1 
+
