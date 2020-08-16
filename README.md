@@ -5,17 +5,17 @@
 ## IoT stack components
 IoT stack consists of Node, Gateway and Controller
 ### Controller
-* [Home Assistant](https://www.home-assistant.io/)
-**+**
+* [Home Assistant](https://www.home-assistant.io/)  
+ **+**
 * [Mosquitto](https://mosquitto.org/)
 ### Gateway
-* [NodeMUC](https://www.nodemcu.com/index_en.html)
-**+**
+* [NodeMUC](https://www.nodemcu.com/index_en.html)  
+ **+**
 * [nRF24L01+](https://www.deviceplus.com/arduino/nrf24l01-rf-module-tutorial/) 
-**+**
+
 ### Node/Object
-* [Arduino](https://www.arduino.cc/en/Guide/ArduinoMini)
-**+**
+* [Arduino](https://www.arduino.cc/en/Guide/ArduinoMini)  
+ **+**
 * [nRF24L01+](https://www.deviceplus.com/arduino/nrf24l01-rf-module-tutorial/) 
 
 ## Monitoring solutions.
