@@ -2,6 +2,8 @@
 ```bash
 docker-compose up -d
 ```
+### Integrating with controller
+Check controller configuration prometheus section
 
 ### Integrating with slack
 - Manage Apps >> Add "Incoming Webhooks"
